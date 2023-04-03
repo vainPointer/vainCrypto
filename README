@@ -1,0 +1,14 @@
+# Third-part libraries
+
+  * [gmp-6.2.1.tar.xz](https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz)
+
+# Montgomery algorithm example
+
+43 * 56 mod 97 = 80, n = 97, r = 100
+
+  * x' = 43 * 100 mod 97 = 32
+  * y' = 56 * 100 mod 97 = 71
+  * a = x' * y' = 2272
+  * a + 24*n = 2272 + 24 * 97 = 4600
+  * a / r = 46
+  * a * r^(-1) mod n = 46 * 65 mod 97 = 80
